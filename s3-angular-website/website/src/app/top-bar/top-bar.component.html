@@ -1,0 +1,86 @@
+<!-- Navbar (sit on top) -->
+  <!-- API Endpoint Access using API Gateway -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script>window.jQuery || document.write('<script src="js/jquery-1.8.3.min.js"><\/script>')</script>
+      <script type="text/javascript">
+       function submitToAPI(e) {
+         e.preventDefault();
+         var URL = "https://e0hobhn13m.execute-api.us-east-1.amazonaws.com/Prod02";
+
+            var Namere = /[A-Za-z]{1}[A-Za-z]/;
+            if (!Namere.test($("#name-input").val())) {
+                         window.alert ("Enter at least 2 initials");
+                return;
+            }
+            var mobilere = /[0-9]{10}/;
+            if (!mobilere.test($("#phone-input").val())) {
+                window.alert ("Please enter valid mobile number");
+                return;
+            }
+            if ($("#email-input").val()=="") {
+                window.alert ("Please enter your email id");
+                return;
+            }
+
+            var reeamil = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/;
+            if (!reeamil.test($("#email-input").val())) {
+                window.alert ("Please enter valid email address");
+                return;
+            }
+
+       var name = $("#name-input").val();
+       var phone = $("#phone-input").val();
+       var email = $("#email-input").val();
+       var desc = $("#description-input").val();
+       var data = {
+          name : name,
+          phone : phone,
+          email : email,
+          desc : desc
+        };
+
+       $.ajax({
+         type: "POST",
+         url : "https://e0hobhn13m.execute-api.us-east-1.amazonaws.com/Prod02",
+         dataType: "json",
+         crossDomain: "true",
+         contentType: "application/json; charset=utf-8",
+         data: JSON.stringify(data),
+
+
+         success: function () {
+           // clear form and show a success message
+           window.alert("Message Sent Successfully");
+           document.getElementById("contact-form").reset();
+           location.reload();
+         },
+         error: function () {
+           // show an error message
+           window.alert("UnSuccessfull");
+         }});
+     }
+     var dt = new Date();
+     document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+    </script>
+     <script src="js/html5shiv.js"></script>
+      <script src="js/selectivizr-min.js"></script>
+<body>
+         <link href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0/dist/css/foundation.min.css" rel="stylesheet">
+          <div class="w3-top w3-card " style="width:100%">
+           <div class="w3-bar w3-white w3-wide w3-card w3-padding-16">
+            <h5 class="w3-bar-item"><b>Flushing</b> New York</h5>
+    <a class="w3-bar-item" title="Current Weather" href="https://www.weatherwx.com/forecast/ny/new+york.html" target="_blank"><img style="width: 140px;"
+                src="https://www.weatherwx.com/forecast.php?forecast=hourly&place=new+york&state=ny&country=us&config=png&alt=hwitransparentbbb&hwvbg=transparent"
+                 alt="Click for the latest New York weather forecast."></a>
+                 <!-- weather widget end -->
+              
+                  <span id="datetime" class="w3-right w3-bar-item w3-hide-small"> Local Time (ET) </span>
+                  </div>
+                  </div>
+                     <script>
+                      // Local time function
+                     var dt = new Date();
+                     document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+                     </script>
+                  </body>
+            

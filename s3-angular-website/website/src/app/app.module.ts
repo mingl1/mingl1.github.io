@@ -3,36 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
-import {
-  AccordionModule,
-  AlertModule,        // Foundation Callouts
-  ButtonsModule,
-  CarouselModule,     // Foundation Orbit
-  CollapseModule,
-  BsDatepickerModule,
-  BsDropdownModule,   // Foundation Dropdown Menus and Dropdown Panes
-  ModalModule,        // Foundation Reveal
-  OffcanvasModule,
-  PaginationModule,
-  ProgressbarModule,
-  RatingModule,
-  SortableModule,
-  TabsModule,
-  TimepickerModule,
-  TooltipModule,
-  TypeaheadModule,
-} from 'ngx-foundation';
-
+import { TopBarComponent } from './top-bar/top-bar.component';
+import { AboutComponent } from './about/about.component';
+import { FeatureComponent } from './feature/feature.component';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TopBarComponent,
+    AboutComponent,
+    FeatureComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    AlertModule.forRoot(),
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
