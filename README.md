@@ -1,1 +1,1 @@
-# mingl1.github.io
+# https://mingl1.github.io
