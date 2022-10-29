@@ -1,0 +1,126 @@
+body {
+    background-image: url(https://media.istockphoto.com/vectors/seamless-bright-blue-day-sky-pattern-with-watercolor-clouds-vector-id1156963574?k=20&m=1156963574&s=612x612&w=0&h=ezvzqhuP8nXFAGMVqADZ6ARipOKOulglV25PefyECn0=);
+    background-size: cover;
+    background-repeat: repeat;
+   
+}
+#content{
+    margin: auto;
+    width: 60%;
+    border: 2px none groove ridge none rgba(47, 128, 128, 0.644);
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 5px 20px black;
+    background-color: lightgrey;
+    overflow: hidden;
+}
+
+nav{
+    background-color: black;
+    height: 5%;
+    text-align: center;
+    height: fit-content;
+}
+footer{
+    background-color: black;
+    margin-top: auto;
+    padding-top: 3%;
+    text-align: center;
+}
+
+a.nav_items{
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 50px;
+}
+a.nav_items:hover{
+    background-color: chocolate;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+}
+li{
+    float: left;
+    margin: auto 50px;
+    text-align: center;
+}
+.assignment1{
+    text-align: center;
+    border: 5px solid hotpink;
+    margin: 3% 22%;
+    height: 25vh;
+    width: 20vw;
+    overflow: scroll;
+}
+.box1{
+    text-align: center;
+}
+
+main{
+    flex-grow: 1;
+}
+img.other{
+    margin: 7%;
+    border-radius: 5px;
+    border: 2px solid black;
+    width: 30%;
+    aspect-ratio: 1;
+    display: inline-flex;
+    float: left;
+}
+.other1{
+    margin: 7%;
+    border-radius: 5px;
+
+    width: 30%;
+    display: inline-flex;
+    text-align: center;
+    flex-direction: column;
+}
+div.second{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.hotpink{
+    margin-top: 20%;
+background-color: hotpink;
+}
+.pink{
+    
+    background-color: pink;
+}
+.lightpink{
+    background-color: lightpink;
+}
+.p1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.p2{
+    font-family: 'Courier New', Courier, monospace;
+}
+.p3{
+    font-family: 'cookie';
+    letter-spacing: 0.1em;
+}
+.buttonbox{
+    margin-top: 20%;
+   
+    width: 50%;
+    align-self: center;
+}
+.abutton{
+
+    border-radius: 10%;
+    padding: 5%;
+    width: 100%;
+    background-color: rgb(255, 165, 0);
+}
