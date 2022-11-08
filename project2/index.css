@@ -455,3 +455,8 @@ footer{
         font-size: 0.6em;
     }
 }
+@media only screen and (max-width:700px){
+    .products1, .products2{
+        height: 57%;
+    }
+}
