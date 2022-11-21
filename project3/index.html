@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 3</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body class="">
+    <div class="container text-center">
+      <h1 class="">GUESS MY NUMBER</h1>
+      <h4>GUESS THE NUMBER BETWEEN 1 AND 100</h4>
+    </div>
+    <div class="container px-4 py-2 w-75 mx-auto rounded mt-5 game">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-sm-4 rounded text-center mt-3">
+          <div class="fluid-row bg-primary rounded px-2">
+            <span class="bg-primary rounded-top score">Score: 10</span>
+            <br />
+            <span class="bg-primary rounded-bottom highscore">High Score: 0</span>
+          </div>
+        </div>
+
+        <div class="col-sm-3 rounded text-center mt-3">
+          <span class="reset px-4 py-3 rounded">RESET</span>
+        </div>
+      </div>
+      <div class="number row mt-5 rounded py-4">
+        <div
+          class="container w-75 rounded bg-success align-items-center justify-content-center"
+        >
+          <div class="container w-50 h-50 px-4">
+            <img src="mia.png" alt="" class="w-100 h-100" />
+          </div>
+
+          <div class="input-group mb-3 mt-3 w-75 mx-auto">
+            <input
+              type="number"
+              class="form-control fail"
+              placeholder="1-100"
+              aria-label="num"
+              aria-describedby="guess"
+              min="1"
+              max="100"
+              id="guess"
+            />
+            <div class="input-group-append fail2">
+              <button
+                class="btn btn-outline-dark bg-primary submit w-100"
+                type="button"
+              >
+                Check
+              </button>
+            </div>
+          </div>
+
+          <p class="hint text-center mt-4">Guess a Number!</p>
+        </div>
+      </div>
+      <div class="row his rounded mb-3 mx-auto">
+          <h6 class="mt-3">Guess History:</h6>
+        <ul class="m-3 history mt-0">
+        </ul>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

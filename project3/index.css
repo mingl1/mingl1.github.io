@@ -1,0 +1,78 @@
+h1{
+    color: rgb(0, 0, 0);
+    text-shadow: 
+    0px 2px 3px #fff,
+    1px 2px 3px #eee,
+    2px 2px 3px #ddd,
+    3px 2px 3px #ccc,
+    4px 2px 3px #ccc,
+    5px 2px 3px #ccc;
+}
+body{
+    background-color: aqua;
+    height: 100vh;
+}
+
+/* @media only screen and (max-width: 580px){
+ body{
+    background-color: brown;
+ }   
+} */
+
+.reset{
+    background-color: rgb(237, 184, 193);
+    cursor: pointer;
+}
+.game{
+    background-color: wheat;
+}
+.number{
+    min-height: 400px;
+}
+@keyframes multicolor1 {
+    0% {
+        background-color: inherit;
+    }
+    25% {
+        background-color: #FF0000;
+    }
+    50% {
+        background-color: green;
+    }
+    75% {
+        background-color: red;
+    }
+    90%{
+        background-color: green;
+    }
+    100%{
+        background-color: red;
+    }
+}
+@keyframes multicolor {
+    0% {
+        background-color: inherit;
+    }
+    25% {
+        background-color: #FF0000;
+    }
+    50% {
+        background-color: green;
+    }
+    75% {
+        background-color: red;
+    }
+    90%{
+        background-color: green;
+    }
+}
+
+.tension1{
+    animation: multicolor 2s;
+}
+.tension{
+    animation: multicolor1 2s;
+}
+.his{
+    background-color: aqua;
+}
