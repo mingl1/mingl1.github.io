@@ -1,4 +1,3 @@
-# https://mingl1.github.io
 # WebDev bootcamp:
 ## [Week 1 - Japan Travel Blog](https://mingl1.github.io/project1)
 ## [Week 2 - E-Commerce Clone](https://mingl1.github.io/project2)
