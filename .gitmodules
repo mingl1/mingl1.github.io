@@ -1,0 +1,3 @@
+[submodule "hooterhacks"]
+	path = hooterhacks
+	url = https://github.com/mingl1/hooterhacks
