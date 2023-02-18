@@ -1,3 +1,6 @@
 [submodule "hooterhacks"]
 	path = hooterhacks
 	url = https://github.com/mingl1/hooterhacks
+[submodule "qr-code-component-main"]
+	path = qr-code-component-main
+	url = https://github.com/mingl1/qr-code-component-main
