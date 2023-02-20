@@ -4,3 +4,6 @@
 [submodule "qr-code-component-main"]
 	path = qr-code-component-main
 	url = https://github.com/mingl1/qr-code-component-main
+[submodule "product-preview-card-component-main"]
+	path = product-preview-card-component-main
+	url = https://github.com/mingl1/product-preview-card-component-main.git
