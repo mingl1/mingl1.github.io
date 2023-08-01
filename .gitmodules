@@ -7,3 +7,6 @@
 [submodule "product-preview-card-component-main"]
 	path = product-preview-card-component-main
 	url = https://github.com/mingl1/product-preview-card-component-main.git
+[submodule "qccsummer2023"]
+	path = qccsummer2023
+	url = https://github.com/mingl1/qccsummer2023
