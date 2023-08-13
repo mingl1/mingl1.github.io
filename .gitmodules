@@ -10,3 +10,6 @@
 [submodule "qccsummer2023"]
 	path = qccsummer2023
 	url = https://github.com/mingl1/qccsummer2023
+[submodule "day7"]
+	path = qccsummer2023/day7/day7
+	url = https://github.com/mingl1/day7
